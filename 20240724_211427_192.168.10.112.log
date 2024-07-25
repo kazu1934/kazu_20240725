@@ -1,0 +1,1026 @@
+Last login: Tue Jul 23 23:29:48 2024 from 192.168.10.108
+今日も宜しくお願い致します。
+[root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# [root@root ~]# ls
+03_for_count.sh        base10.sh     cp2           f.txt            hello_linus.sh        say_hello       test1.txt   test5_5.sh       work1.txt
+03_shell_work_loop     base11.sh     cp3.txt.gz    filearchive      home.html             shell_20240716  test3_1.sh  test6_1.sh       zip
+04_while_count.sh      basic         date          filearchive.tar  mariadb_repo_setup    shell_work      test4_1.sh  testfile
+05_while_loop_date.sh  chmodtest     date20240412  filedir          mariadb_repo_setup.1  show_args.sh    test4_2.sh  umask_test1.txt
+DoThis                 chowndir      diskmem.log   hajimete         myfiles               sima            test5_1.sh  umask_test2.txt
+EOF.txt                chowntest     diskmem.sh    hello.txt2       practice.txt          temp            test5_2.sh  vi.practice
+anaconda-ks.cfg        command_work  ensyu1.txt    hello.txt3       public                temp2           test5_3.sh  work
+apache_ctl3.sh         cp            exam          hello_linus      result.txt            test            test5_4.sh  work.txt
+[root@root ~]# cd shell_20240716
+[root@root shell_20240716]# 
+[root@root shell_20240716]# 
+[root@root shell_20240716]# ls
+advanced  base11.sh  base13.sh  base15.sh  base3.sh    base4_2.sh  base5_2.sh  base7.sh  base9.sh    ex3_until.sh  exam        sample1
+base1.sh  base12.sh  base14.sh  base2.sh   base4_1.sh  base5.sh    base6.sh    base8.sh  ex3_for.sh  ex3_while.sh  sample.txt  sample2
+[root@root shell_20240716]# cd exam
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# ls
+ex1.sh  ex2.sh  ex4.sh  ex4.txt  sample
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# cp -p ex4.sh ex4.sh.sh5.sh
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh
+"ex5.sh" 65L, 925C#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;do#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fh#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))exit 0#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))exit 0elif [ $command = 'min' ];#!/bin/bash
+
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];thensum=0while read p;dosum=$(( sum + p ))done < $fhecho SUM: $sumexit 0elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))exit 0elif [ $command = 'min' ];then
+
+
+
+
+
+
+min=101
+while read p;
+do
+if [ $min -gt $p ];
+then
+min=$p
+fi
+done < $fh
+echo MIN: $min
+exit 0
+elif [ $command = 'max' ];
+then
+max=0
+while read p;
+do
+if [ $max -lt $p ];exit 0echo SUM: $sumdone < $fhsum=$(( sum + p ))dowhile read p;sum=0thenif [ $command = 'sum' ];read -p 'sum,avg,min,max,exit' commandthenif [ -f $fh ];read -p 'ファイル名を入力してください' fh#!/bin/bash-- INSERT --#!/bin/bashfunction xcalcurate?_sum(){}
+
+f
+sum=0
+while read p;
+do
+sum=$(( sum + p ))
+done < $fh
+echo SUM: $sum
+exit 0        sum=0        done < $fh1
+}
+
+
+then
+echo SUM: $sumcount=0
+done < $fhwhile read p;
+sum=$(( sum + p ))do
+dosum=$(( sum + p ))
+while read p;count=$(( count + 1 ))
+sum=0done < $fh$$calcurate_sumv $fhfuction calcurate_sumavg(){}uction calcurate_avg(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))exit 0elif [ $command = 'min' ];thenmin=101done < $1while read p;dosum=$(( sum + p ))function calcurate_sum(){sum=0#!/bin/bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sum=0
+count=0
+while read p;
+do
+sum=$(( sum + p ))
+count=$(( count + 1 ))
+done < $fh
+echo AVG: $(( sum / count))
+exit 0 $fh1
+}}
+
+
+
+
+
+then$calcurate_sum $fh
+elif [ $command = 'avg' ];thensum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $fhecho AVG: $(( sum / count))exit 0elif [ $command = 'min' ];
+exit 0elif [ $command = 'min' ];then
+done < $fhmin=101
+count=$(( count + 1 ))while read p;
+sum=$(( sum + p ))do
+doif [ $min -gt $p ];
+while read p;then
+count=0min=$p
+sum=0fi$calculate_avg $fhate_avg $fhrate_avg $fhcount=0sum=0fuction calcurate_avg(){
+}
+fuction calcurate_min(){}
+
+
+
+
+
+
+
+
+
+min=101while read p;doif [ $min -gt $p ];thenmin=$pfidone < $fhecho MIN: $minexit 0echo AVG: $(( sum / count)) sum=$(( sum + p ))count=$(( count + 1 ))done < $1count=0while read p;dofuction calcurate_avg(){
+ sum=0echo SUM: $sumexit 0
+}dosum=$(( sum + p ))done < $1function calcurate_sum(){sum=0while read p;
+
+
+
+
+
+min=101
+while read p;
+do
+if [ $min -gt $p ];
+then}min=$p
+fi
+
+done < $fh
+
+echo MIN: $min
+exit 0}
+read -p 'ファイル名を入力してください' fh
+if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' commandif [ $command = 'sum' ];then$calcurate_sum $fhelif [ $command = 'avg' ];then$calcurate_avg $fhelif [ $command = 'min' ];thenmin=101while read p;doif [ $min -gt $p ];thenmin=$pfidone < $fhecho MIN: $minexit 0elif [ $command = 'max' ];thenfiif [ $min -gt $p ];thenmin=$pmin=101while read p;do}
+
+fuction calcurate_min(){ $fh1doif [ $min -gt $p ];thenmin=$pfidone < $fhecho MIN: $minexit 0elif [ $command = 'max' ];thenmax=0while read p;doif [ $max -lt $p ];thenmax=$pfidone < $fhecho MAX: $maxexit 0elif [ $command = 'exit' ];thenexit 0
+echo MIN: $min
+done < $fhelse
+fiecho 'そのようなコマンドは存在しません'
+min=$pexit 1
+thenfi
+if [ $min -gt $p ];
+doelse
+while read p;echo 'ファイルが存在しません'
+min=101exit 1if [ $command = 'sum' ];then$calcurate_sum $fhif [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' command
+thencalcurate_sum $fh$ccalcurate_avg $fhcalcurate_min $fh}
+read -p 'ファイル名を入力してください' fhdone < $1echo MIN: $minexit 0thenmin=$pfiwhile read p;doif [ $min -gt $p ];fuction calcurate_min(){
+ min=101fuction calcurate_max(){}
+
+
+
+
+
+
+
+
+thencalcurate_min $fhelif [ $command = 'max' ];thenmax=0while read p;doif [ $max -lt $p ];thenmax=$pfidone < $fhecho MAX: $maxexit 0elif [ $command = 'exit' ];thenexit 0elseecho 'そのようなコマンドは存在しません'exit 1fi
+if [ $command = 'sum' ];if [ -f $fh ];
+thenread -p 'sum,avg,min,max,exit' command}
+read -p 'ファイル名を入力してください' fhfuction calcurate_max(){echo MIN: $minexit 0
+}min=$pfidone < $1doif [ $min -gt $p ];then
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+
+f
+max=0
+while read p;do
+if [ $max -lt $p ];
+then
+max=$p
+fi
+done < $fh
+echo MAX: $max
+exit 0 $fh1
+elif [ $command = 'avg' ];thencalcurate_avg $fhelif [ $command = 'min' ];thencalcurate_min $fhelif [ $command = 'max' ];thenmax=0while read p;doif [ $max -lt $p ];thenmax=$pfidone < $fhecho MAX: $maxexit 0elif [ $command = 'exit' ];thenexit 0
+echo MAX: $max
+done < $fhelse
+fiecho 'そのようなコマンドは存在しません'
+max=$pexit 1
+thenfi
+if [ $max -lt $p ];
+doelse
+while read p;echo 'ファイルが存在しません'
+max=0exit 1calcurate_min $fh $fh $fha $fhx $fh:wq"ex5.sh" 80L, 1633C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# ./ex5.sh
+./ex5.sh: 行 13: 予期しないトークン `(' 周辺に構文エラーがあります
+./ex5.sh: 行 13: `fuction calcurate_avg(){'
+[root@root exam]# ./ex5.shvi ex5.sh
+"ex5.sh" 80L, 1633C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+fuction calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:q![root@root exam]# vi ex5.sh
+"ex5.sh" 80L, 1633C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+fuction calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+min=$p
+fi
+done < $1
+echo MIN: $min
+exit 0
+}
+
+fuction calcurate_max(){
+max=0
+
+
+
+while read p;
+do
+if [ $max -lt $p ];
+then
+max=$p
+fi
+done < $1
+echo MAX: $max
+exit 0
+}
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+then
+read -p 'sum,avg,min,max,exit' command
+if [ $command = 'sum' ];
+then
+calcurate_sum $fh
+
+elif [ $command = 'avg' ];
+then
+calcurate_avg $fh
+elif [ $command = 'min' ];
+then
+calcurate_min $fh
+elif [ $command = 'max' ];
+then
+calcurate_max $fh
+elif [ $command = 'exit' ];
+then
+exit 0
+
+else
+echo 'そのようなコマンドは存在しません'
+exit 1
+fi
+
+else
+echo 'ファイルが存在しません'
+exit 1
+firead -p 'ファイル名を入力してください' fh}exit 0echo MAX: $maxdone < $1fimax=$pthenif [ $max -lt $p ];dowhile read p;max=0fuction calcurate_max(){}exit 0echo MIN: $mindone < $1fimin=$pthenif [ $min -gt $p ];dowhile read p;min=101fuction calcurate_min(){}exit 0echo AVG: $(( sum / count))done < $1count=$(( count + 1 ))sum=$(( sum + p ))dowhile read p;count=0sum=0fuction calcurate_avg(){}exit 0echo SUM: $sumdone < $1sum=$(( sum + p ))dowhile read p;sum=0function calcurate_sum(){#!/bin/bash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+min=$p
+fi
+done < $1
+echo MIN: $min
+exit 0
+}
+
+fuction calcurate_max(){
+max=0
+while read p;
+do
+if [ $max -lt $p ];
+then
+max=$p
+fi
+done < $1
+echo MAX: $max
+exit 0
+}
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+then
+read -p 'sum,avg,min,max,exit' command
+if [ $command = 'sum' ];
+then
+calcurate_sum $fh
+
+elif [ $command = 'avg' ];
+then
+calcurate_avg $fhmin=$pthenif [ $min -gt $p ];dowhile read p;min=101fuction calcurate_min(){}exit 0echo AVG: $(( sum / count))done < $1count=$(( count + 1 ))sum=$(( sum + p ))dowhile read p;count=0sum=0fuction calcurate_avg(){}exit 0echo SUM: $sumdone < $1sum=$(( sum + p ))dowhile read p;sum=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo MIN: $min
+exit 0
+}
+
+fuction calcurate_max(){
+max=0
+while read p;
+do
+if [ $max -lt $p ];
+then
+max=$p
+fi
+done < $1
+echo MAX: $max
+exit 0
+}
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+then
+read -p 'sum,avg,min,max,exit' command
+if [ $command = 'sum' ];
+then
+calcurate_sum $fh
+
+elif [ $command = 'avg' ];
+then
+calcurate_avg $fh
+elif [ $command = 'min' ];
+then
+calcurate_min $fh
+elif [ $command = 'max' ];
+then
+calcurate_max $fh}exit 0echo MIN: $mindone < $1fimin=$pthenif [ $min -gt $p ];dowhile read p;min=101fuction calcurate_min(){}exit 0echo AVG: $(( sum / count))done < $1count=$(( count + 1 ))sum=$(( sum + p ))dowhile read p;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+done < $1
+echo MAX: $max
+exit 0
+}
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+then
+read -p 'sum,avg,min,max,exit' command
+if [ $command = 'sum' ];
+then
+calcurate_sum $fh
+
+elif [ $command = 'avg' ];
+then
+calcurate_avg $fh
+elif [ $command = 'min' ];
+then
+calcurate_min $fh
+elif [ $command = 'max' ];
+then
+calcurate_max $fh
+elif [ $command = 'exit' ];
+then
+exit 0
+
+else
+echo 'そのようなコマンドは存在しません'
+exit 1
+fi
+done < $1fimax=$pthenif [ $max -lt $p ];dowhile read p;max=0fuction calcurate_max(){}exit 0echo MIN: $mindone < $1fimin=$pthenif [ $min -gt $p ];dowhile read p;min=101fuction calcurate_min(){}exit 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if [ -f $fh ];
+then
+read -p 'sum,avg,min,max,exit' command
+if [ $command = 'sum' ];
+then
+calcurate_sum $fh
+
+elif [ $command = 'avg' ];
+then
+calcurate_avg $fh
+elif [ $command = 'min' ];
+then
+calcurate_min $fh
+elif [ $command = 'max' ];
+then
+calcurate_max $fh
+elif [ $command = 'exit' ];
+then
+exit 0
+:wq"ex5.sh" 80L, 1633C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh
+"ex5.sh" 80L, 1633C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+fuction calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then:wq"ex5.sh" 80L, 1633C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh./ex5.sh
+./ex5.sh: 行 13: 予期しないトークン `(' 周辺に構文エラーがあります
+./ex5.sh: 行 13: `fuction calcurate_avg(){'
+[root@root exam]# ./ex5.shvi ex5.sh
+"ex5.sh" 80L, 1633C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+fuction calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then
+
+
+
+
+
+
+
+
+
+
+fuE35: No previous regular expression:q![root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh
+"ex5.sh" 80L, 1633C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+fuction calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then-- INSERT --
+
+
+
+
+
+
+
+
+
+
+
+function calcurate_avg(){fun:wq"ex5.sh" 80L, 1634C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh./ex5.sh
+./ex5.sh: 行 25: 予期しないトークン `(' 周辺に構文エラーがあります
+./ex5.sh: 行 25: `fuction calcurate_min(){'
+[root@root exam]# ./ex5.shvi ex5.sh
+"ex5.sh" 80L, 1634C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+function calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+fuction calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then-- INSERT --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function calcurate_min(){fun:wq"ex5.sh" 80L, 1635C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh./ex5.sh
+./ex5.sh: 行 38: 予期しないトークン `(' 周辺に構文エラーがあります
+./ex5.sh: 行 38: `fuction calcurate_max(){'
+[root@root exam]# ./ex5.shvi ex5.sh
+"ex5.sh" 80L, 1635C#!/bin/bash
+
+function calcurate_sum(){sum=0while read p;dosum=$(( sum + p ))done < $1echo SUM: $sumexit 0
+}
+
+function calcurate_avg(){
+ sum=0count=0while read p;dosum=$(( sum + p ))count=$(( count + 1 ))done < $1echo AVG: $(( sum / count))exit 0
+}
+
+function calcurate_min(){
+ min=101while read p;doif [ $min -gt $p ];then-- INSERT --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+min=$p
+fi
+done < $1
+echo MIN: $min
+exit 0
+}
+
+fuction calcurate_max(){
+max=0
+while read p;
+do
+if [ $max -lt $p ];function calcurate_max(){fun
+ ma
+   
+   
+   
+then   
+max=$p   
+fi   
+done < $1   
+echo MAX: $max   
+exit 0   
+}
+read -p 'ファイル名を入力してください' fhrea
+
+if [ -f $fh ];if 
+then
+:wq"ex5.sh" 80L, 1636C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex5.sh./ex5.sh
+ファイル名を入力してくださいex4.txt
+sum,avg,min,max,exitsum
+SUM: 211
+[root@root exam]# ./ex5.shvi ex5.sh./ex5.sh
+ファイル名を入力してくださいex4.txt
+sum,avg,min,max,exitavg
+AVG: 30
+[root@root exam]# ./ex5.sh
+ファイル名を入力してくださいex4.txt
+sum,avg,min,max,exitmin
+./ex5.sh: 29 行: [: 1: 単項演算子が予期されます
+MIN: 1
+[root@root exam]# ./ex5.sh
+ファイル名を入力してくださいex4.txt
+sum,avg,min,max,exitmax
+./ex5.sh: 42 行: [: 100: 単項演算子が予期されます
+MAX: 100
+[root@root exam]# cat ex5.sh
+#!/bin/bash
+
+function calcurate_sum(){
+	sum=0
+                while read p;
+                do
+                        sum=$(( sum + p ))
+                done < $1
+                echo SUM: $sum
+                exit 0
+}
+
+function calcurate_avg(){
+ sum=0
+                count=0
+                while read p;
+                do
+                        sum=$(( sum + p ))
+                        count=$(( count + 1 ))
+                done < $1
+                echo AVG: $(( sum / count))
+                exit 0
+}
+
+function calcurate_min(){
+ min=101
+                while read p;
+                do
+                        if [ $min -gt $p ];
+                        then
+                                min=$p
+                        fi
+                done < $1
+                echo MIN: $min
+                exit 0
+}
+
+function calcurate_max(){
+ max=0
+                while read p;
+                do
+                        if [ $max -lt $p ];
+                        then
+                                max=$p
+                        fi
+                done < $1
+                echo MAX: $max
+                exit 0
+}
+read -p 'ファイル名を入力してください' fh
+
+if [ -f $fh ];
+then
+	read -p 'sum,avg,min,max,exit' command
+	if [ $command = 'sum' ];
+	then
+	calcurate_sum $fh
+	
+	elif [ $command = 'avg' ];
+	then
+		calcurate_avg $fh
+	elif [ $command = 'min' ];
+	then
+		calcurate_min $fh
+	elif [ $command = 'max' ];
+	then
+		calcurate_max $fh
+	elif [ $command = 'exit' ];
+	then
+		exit 0
+	
+	else
+		echo 'そのようなコマンドは存在しません'
+	exit 1
+	fi
+	
+else
+	echo 'ファイルが存在しません'
+	exit 1
+fi
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# cat ex5.sh./ex5.shvi ex5.sh.sh6.sh
+"ex6.sh" [New File]~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 ~                                                                                                                                                 -- INSERT --#!/bin/bashselect command in ""l"i"s"t" """ ""d"e"l"e"t"e"" ""r"e"n"a"m"e"" ""s"h"o"w"" ""e"x"i"t""docase $command in""i"s"t""list"ist" )ls;;""d"e"l"e"t"e")e")lsread -p ""E"n"t"e"r" "f"i"l"e" "n"a"m"e" "y"o"u" "w"a"n"t" "t"o" "d"e"l"e"t"e":" "" file_nameif [];[ ];-];f]; ];$];f];i];l];e];_];n];a];m];e]; ];];thenrm $file_namefi;;""r"e"n"a"m"e"")lsread -p ""E"n"t"e"r" "f"i"l"e" "n"a"m"e" "y"o"u" "w"a"n"r""t" "t"o" "r"e"n"a"m"e":" "" file_name[~                                                                                                                                                 read -p "Enter file name you want to rename: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_name: " file_namen: " file_namee: " file_namew: " file_name : " file_namef: " file_namei: " file_namek: " file_namee: " file_name : " file_name: " file_name: " file_name: " file_namel: " file_namee: " file_name : " file_namen: " file_namea: " file_namem: " file_namee: " file_name: " file_nameif []; ];-];f]; ];$file_name]; ];];thenmv $file_name $file_namenfile_nameefile_namewfile_name_file_namefile_namefi;;done        fi;;fi;;""s"h"o"w"")lseadread -p ""E"n"t"e"r" "f"i"l"e" "n"a"m"e" "y"o"u" "w"a"n"t" "t"o" "l"o"o"k":"" "" file_namecat $file_name;;""e"x"i"t"")break;;esac
+done#!/bin/bash#!/b:wq"ex6.sh" [New] 31L, 545C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# chmod 755 ex6.sh
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# touch ex6,.txt
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# ./ex6.sh
+1) list
+2) delete
+3) rename
+4) show
+5) exit
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+#? 4
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+Enter file name you want to look: sample
+hello
+#? 3
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+Enter file name you want to rename: ex6.txt
+Enter new file name: ex6.txt^[[D^[[D^[[D^[[D^[[D                    ^[[D           ex6_new.txt
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+#? 
+1) list
+2) delete
+3) rename
+4) show
+5) exit
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+#? 3
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+Enter file name you want to rename: ex6.txt
+Enter new file name: ex6_new.txt
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+#? 5
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# ./ex6.shtouch ex6.txtchmod 755 ex6.shvi
+"ex6.sh" 31L, 545C#!/bin/bash
+
+select command in "list" "delete" "rename" "show" "exit"
+docase $command in"list")ls;;"delete")lsread -p "Enter file name you want to delete: " file_nameif [ -f $file_name ];thenrm $file_namefi;;"rename")lsread -p "Enter file name you want to rename: " file_nameread -p "Enter new file name: " file_nameif [ -f $file_name ];thenmv $file_name $new_file_namefi;;"show")lsread -p "Enter file name you want to look: " file_namecat $file_name;;"exit")break;;
+esac-- INSERT --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+read -p "Enter new file name: " nfile_nameefile_namewfile_name_file_name:wq"ex6.sh" 31L, 549C written
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex6.sh./ex6.sh
+1) list
+2) delete
+3) rename
+4) show
+5) exit
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+#? 4
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+Enter file name you want to look: sample
+hello
+#? 3
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6.txt  sample
+Enter file name you want to rename: ez x6.txt
+Enter new file name: ex6_new.txt
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6_new.txt  sample
+#? 2
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  ex6_new.txt  sample
+Enter file name you want to delete: ex6_new.txt
+#? 1
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  sample
+#? 4
+ex1.sh	ex2.sh	ex4.sh	ex4.txt  ex5.sh  ex6.sh  sample
+Enter file name you want to look: sample
+hello
+#? 5
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# ./ex6.shvi ex6.sh
+"ex6.sh" 31L, 549C#!/bin/bash
+
+select command in "list" "delete" "rename" "show" "exit"
+docase $command in"list")ls;;"delete")lsread -p "Enter file name you want to delete: " file_nameif [ -f $file_name ];thenrm $file_namefi;;"rename")lsread -p "Enter file name you want to rename: " file_nameread -p "Enter new file name: " new_file_nameif [ -f $file_name ];thenmv $file_name $new_file_namefi;;"show")lsread -p "Enter file name you want to look: " file_namecat $file_name;;"exit")break;;
+esac:q![root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# 
+[root@root exam]# vi ex6.sh./ex6.shvi ex6.sh./ex6.shtouch ex6.txtshutdown -h now
